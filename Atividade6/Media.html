@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Atividade 6: Media</title>
+
+    <script>
+        let Aluno = {
+            nome: "",
+            nota: [],
+            media: null
+        };
+
+        function media(Aluno) {
+            return (Aluno.nota[0] + Aluno.nota[1] + Aluno.nota[2]) / 3;
+        }
+
+
+        Aluno.nome = prompt("Digite o nome do Aluno:");
+        for (let j = 0; j < 3; j++)
+            Aluno.nota.push(parseFloat(prompt("Digite a " + (j + 1) + "ª nota do Aluno:")));
+        Aluno.media = media(Aluno).toFixed(2);
+
+
+        alert("Aluno: " + Aluno.nome + "\nMedia: " + Aluno.media);
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
