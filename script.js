@@ -48,6 +48,9 @@ const tela = {
         document.getElementById('resultado-jogador').innerHTML = iconJogador;
         document.getElementById('resultado-computador').innerHTML = iconComputador;
         document.getElementById('resultado').innerHTML = '&nbsp';
+        document.getElementById('btn-pedra').disabled = true;
+        document.getElementById('btn-papel').disabled = true;
+        document.getElementById('btn-tesoura').disabled = true;
 
         document.getElementById('resultado-computador').animate([
             { transform: 'rotate(0deg)' },
@@ -73,14 +76,17 @@ const tela = {
             duration: 2500
         });
 
-        setTimeout(function () { 
-            document.getElementById('resultado').innerHTML = resultado; 
+        setTimeout(function () {
+            document.getElementById('resultado').innerHTML = resultado;
             document.getElementById('resultado-jogador').innerHTML = iconJogador.replace("rock", escolhaJogador);
             document.getElementById('resultado-computador').innerHTML = iconComputador.replace("rock", escolhaComputador);
             document.getElementById('pontuacaoJogador').innerText = pontuacao.pontuacaoJogador;
             document.getElementById('pontuacaoComputador').innerText = pontuacao.pontuacaoComputador;
+            document.getElementById('btn-pedra').disabled = false;
+            document.getElementById('btn-papel').disabled = false;
+            document.getElementById('btn-tesoura').disabled = false;
         }, 2500);
-       
+
 
 
         return 0;
