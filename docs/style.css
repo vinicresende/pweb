@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+:root {
+    font-family: 'Roboto', sans-serif;
+    --grausJogador: -90;
+    --grausComputador: 90;
+}
+
+body {
+    margin: 0;
+    color: #262626;
+}
+
+.planoDeFundo {
+    width: 100vw;
+    height: 100vh;
+    background: #6C7A89;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.planoDeFundo > * {
+    flex-basis: 100%;
+}*/
+
+.container {
+    min-width: 300px;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*.container > * {
+    flex-basis: 100%;
+}*/
+
+.quadro {
+    min-width: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.quadro p {
+    font-size: x-large;
+}
+
+.barraSuperior {
+    min-width: 300px;
+    min-height: 2rem;
+    max-height: 2rem;
+    background-color: #262626;
+    display: flex;
+    flex-direction: row;
+    /*border-style: solid;*/
+}
+
+.quadro {
+    padding: -2rem;
+    font-size: 4rem;
+    /*border-style: solid;*/
+    background-color: #F2BDC7;
+}
+
+.resultado {
+    display: flex;
+    flex-basis: 100%;
+    color: #DE2387;
+    
+
+}
+
+#resultado {
+    color: #DE2387;
+}
+
+.Areabotoes {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao {
+    font-size: 3rem;
+    background-color: none;
+    /*border: none;*/
+}
+
