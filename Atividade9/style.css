@@ -36,10 +36,13 @@ body {
     min-height: 60px;
     background: #b1c6dd;
     border-radius: 3%;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
 }
 
+#Resposta {
+    display: none;
+}
