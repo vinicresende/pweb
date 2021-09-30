@@ -5,34 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisa Opiniao - Atividade 8</title>
+    <title>Atividade 9 - Ordenação</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://kit.fontawesome.com/284916def4.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
     <div class="planoDeFundo">
         <div class="container">
-            <form style="padding: 1.5rem;">
-                <p><strong><label id="textoInicial">Insira os dados da 1ª Pessoa:</label></strong></p>
-                <p><label for="fidade">Idade:</label><br>
-                    <input type="number" id="fidade" name="fidade">
+            <form style="padding: 1.5rem;" id="formulario">
+                <p><strong><label id="textoInicial">Insira os números para ordenação</label></strong></p>
+                <p><label for="fN1">N1</label><br>
+                    <input type="number" id="fN1" name="fN1" required>
                 </p>
-                <p><label for="fsexo">Sexo:</label><br>
-                    <input type="text" maxlength="1" id="fsexo" name="fsexo">
+                <p><label for="fN2">N2</label><br>
+                    <input type="number" id="fN2" name="fN2" required>
                 </p>
-                <p><label for="fopiniao">Opinião:</label><br>
-                    <input type="number"  max="4" id="fopiniao" name="fopiniao">
+                <p><label for="fN3">N3</label><br>
+                    <input type="number" id="fN3" name="fN3" required>
                 </p>
-
-                <input type="button" id="btnEnvUsuario" value="Enviar o Valor do Usuário"><br><br>
-                <input type="button" id="btnEncerrar" value="Encerrar a Pesquisa Agora!">
+                <p>
+                    <br>
+                    <input type="button" id="btnEnvUsuario" value="Ordenar" onclick="exibirOrdenado()">
+                    <input type="button" id="btnEnvUsuario" value="Maximo" onclick="exibirMaximo()">
+                    <button type="reset" onclick="limpar()">Limpar</button>
+                </p>
             </form>
+
+            <div class="containerResposta" id="Resposta">
+                <p id="titulo">Resposta:</p>
+                <p id="resultado">...</p>
+            </div>
+
         </div>
     </div>
-
     <script src="script.js"></script>
+
 </body>
 
 
