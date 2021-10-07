@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 9 - Ordenação</title>
+    <title>Atividade 11 - Funções Construtoras</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -13,28 +13,68 @@
 <body>
     <div class="planoDeFundo">
         <div class="container">
-            <form style="padding: 1.5rem;" id="formulario">
-                <p><strong><label id="textoInicial">Insira os números para ordenação</label></strong></p>
-                <p><label for="fN1">N1</label><br>
-                    <input type="number" id="fN1" name="fN1" required>
+            <form style="padding: 1.5rem;" id="formRetangulo">
+                <p><strong><label id="textoInicial">Retangulo</label></strong></p>
+                <p><label for="Base">Base</label><br>
+                    <input type="number" min="0" step="0.01" id="Base" name="Base" required>
                 </p>
-                <p><label for="fN2">N2</label><br>
-                    <input type="number" id="fN2" name="fN2" required>
-                </p>
-                <p><label for="fN3">N3</label><br>
-                    <input type="number" id="fN3" name="fN3" required>
+                <p><label for="Altura">Altura</label><br>
+                    <input type="number" min="0" step="0.01" id="Altura" name="Altura" required>
                 </p>
                 <p>
                     <br>
-                    <input type="button" id="btnEnvUsuario" value="Ordenar" onclick="exibirOrdenado()">
-                    <input type="button" id="btnEnvUsuario" value="Maximo" onclick="exibirMaximo()">
-                    <button type="reset" onclick="limpar()">Limpar</button>
+                    <input type="button" id="CalcularArea" value="CalcularArea" onclick="ResultadoArea()">
+                    <button type="reset" onclick="limparRet()">Limpar</button>
                 </p>
             </form>
 
-            <div class="containerResposta" id="Resposta">
-                <p id="titulo">Resposta:</p>
-                <p id="resultado">...</p>
+            <div class="containerResposta" id="RespostaRetangulo">
+                <p id="tituloRetangulo">Area:</p>
+                <p id="resultadoRetangulo">...</p>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <form style="padding: 1.5rem;" id="formularioConta">
+                <p><strong><label id="textoInicial">Conta Corrente</label></strong></p>
+                <p><label for="nome">Nome Correntista</label><br>
+                    <input type="text" id="nome" name="nome" required>
+                </p>
+                <p><label for="banco">Banco</label><br>
+                    <input type="text" id="banco" name="banco" required>
+                </p>
+                <p><label for="numeroConta">Nuimero da Conta</label><br>
+                    <input type="text" id="numeroConta" name="numeroConta" required>
+                </p>
+                <p><label for="saldo">Saldo</label><br>
+                    <input type="number" step="0.01" id="saldo" name="saldo" required>
+                </p>
+                <p><input type="radio" id="tipoCorrente" name="tipo" onclick="selecionarTipo()" checked>
+                    <label for="tipoCorrente">Conta Corrente</label>   
+                </p>
+                <p><input type="radio" id="tipoPoupança" name="tipo" onclick="selecionarTipo()">
+                    <label for="tipoPoupança">Conta Poupança</label>  
+                </p>
+                <p id="divSaldoEspecial"><label for="saldoEspecial">Saldo Especial</label><br>
+                    <input type="number" step="0.01" id="saldoEspecial" name="saldoEspecial">
+                </p>
+                <p id="divJuros" style="display: none;"><label for="juros">Juros</label><br>
+                    <input type="number" step="0.01" id="juros" name="juros">
+                </p>
+                <p id="divDataVenc" style="display: none;"><label for="dataVenc">Data de Vencimento</label><br>
+                    <input type="date" id="dataVenc" name="dataVenc">
+                </p>
+                <p>
+                    <br>
+                    <input type="button" id="CriarConta" value="Criar Conta" onclick="CriarContas()">
+                    <button type="reset" onclick="limparContas()">Limpar</button>
+                </p>
+            </form>
+
+            <div class="containerResposta" id="RespostaConta">
+                <p id="titulo">Contas:</p>
+                <p id="resultadoConta"></p>
             </div>
 
         </div>
