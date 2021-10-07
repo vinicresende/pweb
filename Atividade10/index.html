@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10 - Criação Objeto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="planoDeFundo">
+        <div class="container">
+            <form style="padding: 1.5rem;" id="formulario">
+                <p><strong><label id="textoInicial">Criação de Objeto</label></strong></p>
+                <p><label for="RA">RA</label><br>
+                    <input type="text" id="RA" name="RA" required>
+                </p>
+                <p><label for="Nome">Nome</label><br>
+                    <input type="text" id="Nome" name="Nome" required>
+                </p>
+                <p>
+                    <br>
+                    <input type="button" id="Metodo1" value="Metodo 1" onclick="MetodoUm()">
+                    <input type="button" id="Metodo2" value="Metodo 2" onclick="MetodoDois()">
+                    <input type="button" id="Metodo3" value="Metodo 3" onclick="MetodoTres()"><br><br>
+                    <button type="reset" onclick="limpar()">Limpar</button>
+                </p>
+            </form>
+
+            <div class="containerResposta" id="Resposta">
+                <p id="titulo">Objeto Pessoa Criado:</p>
+                <p id="resultado">...</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
