@@ -112,10 +112,10 @@
                     if (isset($_POST['email'])) {
                         //CONECTANDO NO BD
                         $dbHost = "localhost";
-                        $dbName = "u534119498_CONTATO";
+                        $dbName = "SEGREDO MAS NO SITE ESTÁ CORRETO";
                         $dbChar = "utf8";
-                        $dbUser = "u534119498_vinicresende";
-                        $dbPass = "Havanagila8959";
+                        $dbUser = "SEGREDO MAS NO SITE ESTÁ CORRETO";
+                        $dbPass = "SEGREDO MAS NO SITE ESTÁ CORRETO";
 
                         $pdo = new PDO(
                             "mysql:host=$dbHost;charset=$dbChar;dbname=$dbName",
