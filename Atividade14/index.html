@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14 - Formulário</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="planoDeFundo">
+        <div class="container">
+            <form id="form">
+                <h3><strong><label id="textoInicial">Formulario Principal</label></strong></h3>
+                <p><label for="Nome">Nome</label><br>
+                    <input id="Nome" name="Nome" required>
+                </p>
+                <p><label for="email">E-mail</label><br>
+                    <input id="email" name="email" required>
+                </p>
+                <p><label for="comentario">Comentario</label><br>
+                    <textarea id="comentario" name="comentario" required rows="5" cols="20"></textarea>
+                </p>
+                <div class="texto">
+                    <h3>
+                        Pesquisa:
+                    </h3>
+                    <p>
+                        Primeira vez nesta página??
+                    </p>
+                    <p>
+                        <input type="radio" id="sim" name="pesquisa" value="sim" checked>
+                        <label for="sim">Sim</label>
+                        <input type="radio" id="nao" name="pesquisa" value="nao">
+                        <label for="nao">Não</label>
+                    </p>
+                </div>
+                <p class="botoes">
+                    <br>
+                    <input type="button" id="Enviar" value="Enviar" onclick="Validar()">
+                    <button type="reset" onclick="limpar()">Limpar</button>
+                </p>
+            </form>
+
+            <div class="containerResposta" id="Resposta">
+                <p id="Titulo">Título:</p>
+                <p id="Resposta">...</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>

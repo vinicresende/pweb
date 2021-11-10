@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    color: #262626;
+}
+
+.planoDeFundo {
+    width: 100vw;
+    min-height: 90vh;
+    max-height: 90vh;
+    background: #6C7A89;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.container {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 250px;
+    background: #fff;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+.containerResposta {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 60px;
+    background: #b1c6dd;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Resposta {
+    display: none;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto > *{
+    margin: 0.5em;
+    align-self: center;
+}
+
+.botoes {
+    align-self: center;
+}
